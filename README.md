@@ -11,7 +11,7 @@ Las diferentes etapas del proyecto se encuentran en la carpeta notebooks:
 - 01_Tratamiento_missing_outliers_correlaciones.ipynb se trata del seguimiento del EDA además del tratamiento de datos antes de la separación entre train y test.
 - 02_Procesamiento_de_variables.ipynb codifico las variables categóricas, hago un escalado y selecciono las variables más importantes para mi modelo.
 
-El link del repo de github es el siguiente: https://github.com/ramonmorillx/mds_ML_rmb
+El link del repo de github es el siguiente: https://github.com/ramonmorillx/ML_Project_Loan_Status
 
 Autor:
 Ramón Morillo Barrera - ramon.morillo@cunef.edu / ramonvejer@gmail.com
