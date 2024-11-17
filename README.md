@@ -10,7 +10,7 @@ En este repositorio registro todo lo referente a mi proyecto más grande de ML h
 
 Este proyecto tiene como objetivo aplicar los conocimientos adquiridos en la asignatura de Machine Learning para desarrollar un modelo capaz de detectar clientes con dificultad de pago a la hora de conceder u préstamo bancario. Se realizará un análisis exploratorio de los datos, seguido de un preprocesamiento adecuado, y se abordará el desbalanceo de la variable objetivo. Además, se aplicarán diversos modelos de Machine Learning, se explicará su funcionamiento y se presentarán los resultados obtenidos.
 
-####Objetivos Principales:
+#### Objetivos Principales:
 
 Objetivos Generales:
 
