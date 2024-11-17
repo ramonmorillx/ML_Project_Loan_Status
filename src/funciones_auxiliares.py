@@ -9,6 +9,50 @@ import importlib
 import scipy.stats as ss
 
 ##### 
+def corr_cat_boolean(df):
+    """
+    Calcula la matriz de correlaciones entre variables booleanas utilizando Cramér's V.
+    Convierte columnas con valores int a booleanas antes del cálculo.
+    
+    Args:
+    - df (pd.DataFrame): DataFrame con columnas booleanas o enteras.
+
+    Returns:
+    - pd.DataFrame: Matriz de correlaciones basada en Cramér's V.
+    """
+    # Transformar columnas int a booleanas
+    df = df.applymap(lambda x: bool(x) if isinstance(x, (int, np.integer)) else x)
+    
+    # Verificar que todas las columnas sean booleanas después de la transformación
+    if not all(df.dtypes == 'bool'):
+        raise ValueError("El DataFrame debe contener únicamente columnas booleanas después de la transformación.")
+    
+    # Asegurarse de que los datos booleanos estén correctamente codificados como 'True' y 'False'
+    df = df.astype(bool)
+    
+    # Calcular Cramér's V para cada par de columnas
+    columns = df.columns
+    corr_matrix = []
+    for col1 in columns:
+        row = []
+        for col2 in columns:
+            # Crear la matriz de confusión
+            confusion_matrix = pd.crosstab(df[col1], df[col2])
+            
+            # Verificar si la tabla de contingencia tiene más de una categoría
+            if confusion_matrix.shape[0] > 1 and confusion_matrix.shape[1] > 1:
+                v = cramers_v(confusion_matrix.values)
+                row.append(v)
+            else:
+                # Si no se puede calcular Cramér's V, se asigna un valor de 0
+                row.append(0)
+        corr_matrix.append(row)
+
+    # Convertir la matriz a un DataFrame
+    corr_matrix = pd.DataFrame(corr_matrix, columns=columns, index=columns)
+    return corr_matrix
+
+#####
 
 def corr_cat(df,target=None,target_transform=False):
     '''
@@ -29,7 +73,7 @@ def corr_cat(df,target=None,target_transform=False):
     - Return:
         -- corr_cat: matriz con los Cramers V cruzados.
     '''
-    df_cat_string = list(df.select_dtypes('category').columns.values)
+    df_cat_string = list(df.select_dtypes(include=['category', 'object', 'boolean']).columns.values)
     
     if target_transform:
         t_type = df[target].dtype
