@@ -1,6 +1,9 @@
 ## ML_Project_Loan_Status
 ##### Machine Learning project repository
+El link del repo de github es el siguiente: https://github.com/ramonmorillx/ML_Project_Loan_Status
 
+Autor:
+Ramón Morillo Barrera - ramon.morillo@cunef.edu / ramonvejer@gmail.com
 ## Bienvenidos a mi repo de Github
 En este repositorio registro todo lo referente a mi proyecto más grande de ML hasta la fecha, se trata de un proyecto completo de ML que incluye un EDA, feature processing, model selection, model implementation, explainability y conclusions. Este repositorio se irá actualizando conforme vaya avanzando con el proyecto, ya que es parte del Máster en ciencia de datos que estoy cursando.
 
@@ -51,7 +54,3 @@ El repositorio está compuesto por las siguientes carpetas:
 
 Los datos debido a su capacidad de almacenamiento no estarán en github, pero se pueden solicitar bajo petición anticipada.
 
-El link del repo de github es el siguiente: https://github.com/ramonmorillx/ML_Project_Loan_Status
-
-Autor:
-Ramón Morillo Barrera - ramon.morillo@cunef.edu / ramonvejer@gmail.com
