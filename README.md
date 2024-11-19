@@ -41,10 +41,15 @@ Explicabilidad:
 - El objetivo será entender cómo operan los modelos, identificar qué variables son más influyentes en las decisiones del modelo, y analizar cómo varían las decisiones del modelo dependiendo de los distintos casos evaluados, entre otros aspectos clave.
 
 #### Repositorio de Github:
-Las diferentes etapas del proyecto se encuentran en la carpeta notebooks:
-- 00_Exploratory_Data_Analysis.ipynb se trata de un EDA inicial del conjunto de datos.
-- 01_Tratamiento_missing_outliers_correlaciones.ipynb se trata del seguimiento del EDA además del tratamiento de datos antes de la separación entre train y test.
-- 02_Procesamiento_de_variables.ipynb codifico las variables categóricas, hago un escalado y selecciono las variables más importantes para mi modelo.
+El repositorio está compuesto por las siguientes carpetas:
+
+- src: directorio que contiene las funciones .py auxiliares que se importan en los notebooks
+- html: carpeta en donde se encuentran todos los archivos html exportados
+- images: directorio para guardar imágenes relevantes o que se importen en notebooks
+- notebooks: carpeta que contiene los notebooks con todos los procesos realizados
+- env: carpeta con los requerimientos del enviroment para poder ejecutar todo el código sin problemas.
+
+Los datos debido a su capacidad de almacenamiento no estarán en github, pero se pueden solicitar bajo petición anticipada.
 
 El link del repo de github es el siguiente: https://github.com/ramonmorillx/ML_Project_Loan_Status
 
