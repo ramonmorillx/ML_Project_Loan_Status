@@ -10,6 +10,7 @@ beautifulsoup4 @ file:///home/conda/feedstock_root/build_artifacts/beautifulsoup
 bleach @ file:///home/conda/feedstock_root/build_artifacts/bleach_1730286182742/work
 Brotli @ file:///D:/bld/brotli-split_1725267609074/work
 cached-property @ file:///home/conda/feedstock_root/build_artifacts/cached_property_1615209429212/work
+category-encoders==2.6.4
 certifi @ file:///home/conda/feedstock_root/build_artifacts/certifi_1725278078093/work/certifi
 cffi @ file:///D:/bld/cffi_1725560655177/work
 charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1728479282467/work
